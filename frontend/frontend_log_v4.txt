@@ -1,0 +1,93 @@
+
+> know-your-ca@1.0.0 start
+> react-scripts start
+
+(node:69690) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:69690) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(node:69690) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view know-your-ca in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.16.31.57:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/Subscription.js
+Syntax error: 'import' and 'export' may only appear at the top level. (10:4) (10:4)
+ERROR in ./src/pages/Subscription.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/sanathande/KnowYourCA/frontend/src/pages/Subscription.js: 'import' and 'export' may only appear at the top level. (10:4)
+
+   8 |     const navigate = useNavigate();
+   9 |
+> 10 |     import { jwtDecode } from "jwt-decode";
+     |     ^
+  11 |     // ... imports
+  12 |
+  13 |     function Subscription() {
+    at constructor (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:365:19)
+    at FlowParserMixin.raise (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:6599:19)
+    at FlowParserMixin.parseStatementContent (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:12871:18)
+    at FlowParserMixin.parseStatementLike (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:12767:17)
+    at FlowParserMixin.parseStatementLike (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:2918:24)
+    at FlowParserMixin.parseStatementListItem (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:12747:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:13316:61)
+    at FlowParserMixin.parseBlockBody (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:13309:10)
+    at FlowParserMixin.parseBlock (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:13297:10)
+    at FlowParserMixin.parseFunctionBody (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:12100:24)
+    at FlowParserMixin.parseFunctionBody (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:2895:11)
+    at FlowParserMixin.parseFunctionBodyAndFinish (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:12086:10)
+    at FlowParserMixin.parseFunctionBodyAndFinish (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:2903:18)
+    at /Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:13445:12
+    at FlowParserMixin.withSmartMixTopicForbiddingContext (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:12403:14)
+    at FlowParserMixin.parseFunction (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:13444:10)
+    at FlowParserMixin.parseFunctionStatement (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:13125:17)
+    at FlowParserMixin.parseStatementContent (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:12791:21)
+    at FlowParserMixin.parseStatementLike (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:12767:17)
+    at FlowParserMixin.parseStatementLike (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:2918:24)
+    at FlowParserMixin.parseModuleItem (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:12744:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:13316:36)
+    at FlowParserMixin.parseBlockBody (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:13309:10)
+    at FlowParserMixin.parseProgram (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:12622:10)
+    at FlowParserMixin.parseTopLevel (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:12612:25)
+    at FlowParserMixin.parseTopLevel (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:3685:28)
+    at FlowParserMixin.parse (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:14488:25)
+    at parse (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/parser/lib/index.js:14522:38)
+    at parser (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+    at normalizeFile.next (<anonymous>)
+    at run (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+    at run.next (<anonymous>)
+    at transform (/Users/sanathande/KnowYourCA/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+    at transform.next (<anonymous>)
+    at step (/Users/sanathande/KnowYourCA/frontend/node_modules/gensync/index.js:261:32)
+    at /Users/sanathande/KnowYourCA/frontend/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/Users/sanathande/KnowYourCA/frontend/node_modules/gensync/index.js:223:11)
+    at /Users/sanathande/KnowYourCA/frontend/node_modules/gensync/index.js:189:28
+    at /Users/sanathande/KnowYourCA/frontend/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+    at /Users/sanathande/KnowYourCA/frontend/node_modules/gensync/index.js:113:33
+    at step (/Users/sanathande/KnowYourCA/frontend/node_modules/gensync/index.js:287:14)
+    at /Users/sanathande/KnowYourCA/frontend/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/Users/sanathande/KnowYourCA/frontend/node_modules/gensync/index.js:223:11)
+
+ERROR in [eslint] 
+src/pages/Subscription.js
+  Line 10:4:  Parsing error: 'import' and 'export' may only appear at the top level. (10:4)
+
+webpack compiled with 2 errors
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+The build failed because the process exited too early. This probably means the system ran out of memory or someone called `kill -9` on the process.

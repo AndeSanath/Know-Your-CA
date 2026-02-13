@@ -1,0 +1,62 @@
+
+> know-your-ca-backend@1.0.0 start
+> node server.js
+
+Server running on port 5001
+MongoDB connected
+User connected: PV5x89kH_a2NR7-NAAAB
+User connected: 65hLqHZfJsjQBMSHAAAD
+User disconnected: PV5x89kH_a2NR7-NAAAB
+User connected: qtrPxM2LWy1J7uSaAAAF
+User disconnected: 65hLqHZfJsjQBMSHAAAD
+User connected: fs3iCAUHKoJ8tyVJAAAH
+User disconnected: fs3iCAUHKoJ8tyVJAAAH
+User connected: rF_KNqJ6xuv50fZ0AAAJ
+User disconnected: rF_KNqJ6xuv50fZ0AAAJ
+User connected: 4rSITJRYNLMwsWYPAAAL
+User disconnected: 4rSITJRYNLMwsWYPAAAL
+User connected: SYdEk6hvfVa__LOAAAAN
+User disconnected: SYdEk6hvfVa__LOAAAAN
+User connected: pYKiPb4s94kB1qekAAAP
+User connected: AblryV4F_AmZOc0AAAAR
+User disconnected: qtrPxM2LWy1J7uSaAAAF
+User connected: aOWsHnyxzEClDo0QAAAT
+User disconnected: AblryV4F_AmZOc0AAAAR
+User disconnected: aOWsHnyxzEClDo0QAAAT
+User connected: XmB686FREfkZbsKoAAAV
+User connected: UhUn-5P3_5TweuSlAAAX
+User disconnected: XmB686FREfkZbsKoAAAV
+User connected: Sl92LgkSjVHI6f3zAAAZ
+User disconnected: pYKiPb4s94kB1qekAAAP
+User connected: YlNyUEnI9aUGfPW_AAAb
+User disconnected: Sl92LgkSjVHI6f3zAAAZ
+User disconnected: YlNyUEnI9aUGfPW_AAAb
+User connected: ZteeG9lsjf9JoqQrAAAd
+User disconnected: ZteeG9lsjf9JoqQrAAAd
+User connected: uF0n4wVHEKdtHKteAAAf
+User disconnected: uF0n4wVHEKdtHKteAAAf
+User connected: a0EihjKpFh4i7cb_AAAh
+User disconnected: a0EihjKpFh4i7cb_AAAh
+User connected: 8rvXnPaeIBq8i4tLAAAj
+User disconnected: 8rvXnPaeIBq8i4tLAAAj
+User connected: uAZ0AbpDr7tAY50MAAAl
+User disconnected: uAZ0AbpDr7tAY50MAAAl
+User connected: n5Wf0ChM_iC4ZRnVAAAn
+User disconnected: n5Wf0ChM_iC4ZRnVAAAn
+User connected: R_mhi-qFzwGzLz2WAAAp
+User disconnected: R_mhi-qFzwGzLz2WAAAp
+User connected: ov8gugq7k0672DstAAAr
+User disconnected: ov8gugq7k0672DstAAAr
+User connected: FJyVP2XLxPzQFVTbAAAt
+User disconnected: FJyVP2XLxPzQFVTbAAAt
+User connected: j4rrEDXwUBTMYGuZAAAv
+User disconnected: j4rrEDXwUBTMYGuZAAAv
+User connected: EkiMvGY9oQFhkqHBAAAx
+User 698ee158617481d314f1304f joined room
+User disconnected: UhUn-5P3_5TweuSlAAAX
+User disconnected: EkiMvGY9oQFhkqHBAAAx
+User connected: kgNepCQ_q9Mbo52aAAAz
+User disconnected: kgNepCQ_q9Mbo52aAAAz
+User connected: 0CEjmXB7TBxZTqDaAAA1
+User disconnected: 0CEjmXB7TBxZTqDaAAA1
+User connected: Oki8RZ6ldOc5gJQ3AAA3

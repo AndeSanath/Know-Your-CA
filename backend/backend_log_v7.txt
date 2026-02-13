@@ -1,0 +1,57 @@
+
+> know-your-ca-backend@1.0.0 start
+> node server.js
+
+Server running on port 5001
+MongoDB connected
+User connected: DJndxF5-hp4fV8iqAAAB
+User disconnected: DJndxF5-hp4fV8iqAAAB
+User connected: 5H76tgvp2lOQLQJaAAAD
+User connected: aL9THPFbgyIfPWkfAAAF
+User disconnected: 5H76tgvp2lOQLQJaAAAD
+User disconnected: aL9THPFbgyIfPWkfAAAF
+User connected: knVo-7veUiD3sOX_AAAH
+User disconnected: knVo-7veUiD3sOX_AAAH
+User connected: uERXxPy_-m2nk4onAAAJ
+User disconnected: uERXxPy_-m2nk4onAAAJ
+User connected: fyYn5dcLkWQjDYBdAAAL
+User disconnected: fyYn5dcLkWQjDYBdAAAL
+User connected: 8CHjQE-AqEdCRbqdAAAN
+User disconnected: 8CHjQE-AqEdCRbqdAAAN
+User connected: yTiklwYCxV9C1DLoAAAP
+User disconnected: yTiklwYCxV9C1DLoAAAP
+User connected: KxGALM5cCaZqozF9AAAR
+User disconnected: KxGALM5cCaZqozF9AAAR
+User connected: FJ0c0CYtfs0wkSrRAAAT
+User disconnected: FJ0c0CYtfs0wkSrRAAAT
+User connected: 0bCqAePHvZAVt2RmAAAV
+User connected: 5sWOd-3yZ5WgPcw3AAAX
+User disconnected: 0bCqAePHvZAVt2RmAAAV
+User 698ee158617481d314f1304f joined room
+User 698ee158617481d314f1304f joined room
+User 698ee158617481d314f1304f joined room
+User 698ee158617481d314f1304f joined room
+User disconnected: 5sWOd-3yZ5WgPcw3AAAX
+User connected: nHpuwhaqA3niPJ1uAAAZ
+User disconnected: nHpuwhaqA3niPJ1uAAAZ
+User connected: 6buDCjO29Jf9aT1YAAAb
+User disconnected: 6buDCjO29Jf9aT1YAAAb
+User connected: bv1Bk6PPjZ_bYQJeAAAd
+User disconnected: bv1Bk6PPjZ_bYQJeAAAd
+User connected: 3MICoaulqWltzNGYAAAf
+User disconnected: 3MICoaulqWltzNGYAAAf
+User connected: JCKhNAWFoUCkUxPWAAAh
+User disconnected: JCKhNAWFoUCkUxPWAAAh
+User connected: YvSGlz2JVb5dy853AAAj
+User disconnected: YvSGlz2JVb5dy853AAAj
+User connected: CLdIIJvv7N3BfKMWAAAl
+User connected: qES5xzGMI3lXFjgBAAAn
+User disconnected: CLdIIJvv7N3BfKMWAAAl
+User disconnected: qES5xzGMI3lXFjgBAAAn
+User connected: j9kApBBjBVRNpR8LAAAp
+User disconnected: j9kApBBjBVRNpR8LAAAp
+User connected: j6FLOYVM_Xy2oSbFAAAr
+User disconnected: j6FLOYVM_Xy2oSbFAAAr
+User connected: QvFtTJ9rpWVhG3HJAAAt
+User disconnected: QvFtTJ9rpWVhG3HJAAAt
+User connected: k5yRETC4H2gny9SHAAAv
