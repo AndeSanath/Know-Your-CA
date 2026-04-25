@@ -4,7 +4,7 @@ const CASchema = new mongoose.Schema({
     userId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "User",
-        // required: true // Can't mark required yet until we re-seed or update existing data
+        required: true
     },
     name: {
         type: String,
@@ -13,11 +13,6 @@ const CASchema = new mongoose.Schema({
     image: {
         type: String,
         required: true,
-    },
-    headerImage: {
-        type: String,
-        required: false, // Optional for now, or true if we force it
-        default: "https://via.placeholder.com/800x200" // Default header
     },
     specialization: {
         type: String,
@@ -70,10 +65,6 @@ const CASchema = new mongoose.Schema({
             },
         },
     ],
-    userId: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "User",
-    },
 });
 
 module.exports = mongoose.model("CA", CASchema);

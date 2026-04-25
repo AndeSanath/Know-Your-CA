@@ -34,6 +34,34 @@ router.post("/", async (req, res) => {
     }
 });
 
+// Submit a review
+router.post("/review/:id", async (req, res) => {
+    try {
+        const { userId, userName, rating, comment } = req.body;
+        const ca = await CA.findById(req.params.id);
+
+        if (!ca) return res.status(404).json({ message: "CA not found" });
+
+        const newReview = {
+            userId,
+            userName,
+            rating: Number(rating),
+            comment
+        };
+
+        ca.reviews.push(newReview);
+        
+        // Update average rating
+        const totalRating = ca.reviews.reduce((acc, item) => item.rating + acc, 0);
+        ca.rating = (totalRating / ca.reviews.length).toFixed(1);
+
+        await ca.save();
+        res.status(201).json(ca);
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+});
+
 // Get all CAs with optional search
 router.get("/", async (req, res) => {
     try {

@@ -1,13 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import AuthContext from '../context/AuthContext';
 import './CAProfile.css';
 
 const CAProfile = () => {
     const { id } = useParams();
     const navigate = useNavigate();
+    const [rating, setRating] = useState(5);
+    const [reviewText, setReviewText] = useState("");
+    const [reviewLoading, setReviewLoading] = useState(false);
     const [ca, setCa] = useState(null);
     const [loading, setLoading] = useState(true);
+    const { user } = useContext(AuthContext);
 
     useEffect(() => {
         const fetchCA = async () => {
@@ -22,6 +27,29 @@ const CAProfile = () => {
         };
         fetchCA();
     }, [id]);
+
+    const handleReviewSubmit = async (e) => {
+        e.preventDefault();
+        if (!user) return alert("Please login to post a review");
+        if (!reviewText.trim()) return;
+
+        setReviewLoading(true);
+        try {
+            const res = await axios.post(`http://localhost:5001/api/ca/review/${id}`, {
+                userId: user.id,
+                userName: user.name,
+                rating,
+                comment: reviewText
+            });
+            setCa(res.data);
+            setReviewText("");
+            setRating(5);
+        } catch (err) {
+            console.error("Review error:", err);
+        } finally {
+            setReviewLoading(false);
+        }
+    };
 
     if (loading) return <div className="loading-state"><div className="loader"></div></div>;
     if (!ca) return <div className="error-state">Expert not found</div>;
@@ -70,12 +98,46 @@ const CAProfile = () => {
                         </div>
                     </section>
 
-                    <section className="card aesthetic-card">
-                        <h2>Client Feedback</h2>
-                        <div className="reviews-placeholder">
-                            <div className="star-rating">⭐⭐⭐⭐⭐</div>
-                            <p>Professional and highly efficient in handling our GST compliance.</p>
-                            <span className="review-author">— Rajesh M., CEO of Techflow</span>
+                    <section className="card aesthetic-card reviews-section">
+                        <h2>Client Feedback ({ca.reviews?.length || 0})</h2>
+                        
+                        {/* New Review Form */}
+                        <form className="review-form" onSubmit={handleReviewSubmit} style={{ marginBottom: '30px', padding: '20px', background: '#f8fafc', borderRadius: '16px' }}>
+                            <h3>Share your experience</h3>
+                            <div className="rating-input" style={{ margin: '10px 0' }}>
+                                {[1,2,3,4,5].map(star => (
+                                    <span 
+                                        key={star} 
+                                        onClick={() => setRating(star)}
+                                        style={{ cursor: 'pointer', fontSize: '1.5rem', color: rating >= star ? '#f59e0b' : '#cbd5e1' }}
+                                    >★</span>
+                                ))}
+                            </div>
+                            <textarea 
+                                value={reviewText}
+                                onChange={(e) => setReviewText(e.target.value)}
+                                placeholder="What was it like working with this CA?"
+                                style={{ width: '100%', padding: '12px', borderRadius: '12px', border: '1px solid #e2e8f0', marginBottom: '10px' }}
+                            />
+                            <button type="submit" className="btn btn-primary" disabled={reviewLoading}>
+                                {reviewLoading ? 'Submitting...' : 'Post Review'}
+                            </button>
+                        </form>
+
+                        <div className="reviews-list">
+                            {ca.reviews && ca.reviews.length > 0 ? (
+                                ca.reviews.map((r, i) => (
+                                    <div key={i} className="review-item" style={{ marginBottom: '20px', paddingBottom: '20px', borderBottom: '1px solid #f1f5f9' }}>
+                                        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                            <strong>{r.userName}</strong>
+                                            <span style={{ color: '#f59e0b' }}>{'★'.repeat(r.rating)}</span>
+                                        </div>
+                                        <p style={{ margin: '5px 0', color: '#475569' }}>{r.comment}</p>
+                                    </div>
+                                ))
+                            ) : (
+                                <p>No reviews yet. Be the first to share your experience!</p>
+                            )}
                         </div>
                     </section>
                 </div>
