@@ -43,10 +43,17 @@ router.get("/inbox/:userId", async (req, res) => {
     }
 });
 
+const mongoose = require("mongoose");
+
 // Get messages between two users
 router.get("/:userId/:otherUserId", async (req, res) => {
     try {
         const { userId, otherUserId } = req.params;
+
+        // Validate ObjectIds to prevent crashes
+        if (!mongoose.Types.ObjectId.isValid(userId) || !mongoose.Types.ObjectId.isValid(otherUserId)) {
+            return res.status(400).json({ message: "Invalid user ID format" });
+        }
 
         const messages = await Message.find({
             $or: [
@@ -57,6 +64,7 @@ router.get("/:userId/:otherUserId", async (req, res) => {
 
         res.json(messages);
     } catch (err) {
+        console.error("Chat fetch error:", err);
         res.status(500).json({ message: err.message });
     }
 });
